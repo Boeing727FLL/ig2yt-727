@@ -31,12 +31,22 @@ Repository variable `PUBLISH_MODE` controls visibility of new uploads:
 
 ## Privacy policy
 
-This application is operated by FLL team Boeing 727 for the team's own
-accounts only. It reads public video media from the team's own Instagram
-account and uploads it to the team's own YouTube channel. It does not
-collect, store, or share any personal data about end users, and it is not
-offered to end users at all. Credentials are stored as encrypted GitHub
-Actions secrets in this repository. Questions: boeing727.il@gmail.com.
+This application is operated by FLL team Boeing 727 and processes only the
+team's own accounts. What it handles each run:
+
+- reads the team's own Instagram media: video files, captions, permalinks,
+  and media metadata (IDs, timestamps, media type);
+- uploads those videos to the team's own YouTube channel, copying the
+  Instagram caption into the YouTube title and description (the exact
+  title/description policy for PUBLIC publishing is pending team approval;
+  during testing all uploads are private);
+- stores no database of its own; dedupe state lives in the YouTube video
+  descriptions (`ig:<media_id>` markers);
+- credentials are stored as encrypted GitHub Actions secrets in this
+  repository and are never logged.
+
+The app is not offered to end users and collects no data about them.
+Questions: boeing727.il@gmail.com.
 
 ## Known limitation
 
