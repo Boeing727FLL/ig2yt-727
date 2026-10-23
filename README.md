@@ -29,6 +29,15 @@ Repository variable `PUBLISH_MODE` controls visibility of new uploads:
 | `YT_REFRESH_TOKEN` | YouTube refresh token for the team's channel |
 | `GH_PAT` | Fine-grained PAT: Actions + Secrets on this repo only |
 
+## Privacy policy
+
+This application is operated by FLL team Boeing 727 for the team's own
+accounts only. It reads public video media from the team's own Instagram
+account and uploads it to the team's own YouTube channel. It does not
+collect, store, or share any personal data about end users, and it is not
+offered to end users at all. Credentials are stored as encrypted GitHub
+Actions secrets in this repository. Questions: boeing727.il@gmail.com.
+
 ## Known limitation
 
 Instagram does not expose `media_url` for reels that use Instagram
